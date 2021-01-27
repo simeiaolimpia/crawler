@@ -15,7 +15,7 @@
   } );
 </script>
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #9ACD32">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #9ACD32">
   <a class="navbar-brand" href="/">
   	<img src="./views/img/logoCrawler2.png" style="width:120px">
   </a>
