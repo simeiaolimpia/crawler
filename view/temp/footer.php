@@ -1,9 +1,9 @@
-<footer class="mt-2" style="background-color: #9ACD32; position:fixed;bottom: 0; width: 100%">
+<footer class="mt-2 d-flex justify-content-between" style="background-color: #9ACD32; width: 100%">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md text-center">
+      <div class="col-md text-center d-flex flex-column align-items-center">
         <a class="navbar-brand" href="index.php">
-          <img src="./views/img/logoCrawler2.png" style="width:120px; margin-top: 70%">
+          <img src="./img/logoCrawler2.png" style="width:120px; margin-top: 50%">
         </a>
         <p class="text-white font-weight-bold">© 2020 Crawler - Todos os direitos reservados.</p>
       </div>
