@@ -76,9 +76,9 @@ CREATE TABLE IF NOT EXISTS `mydb`.`cwl_anuncio` (
   `anu_end_id` INT NOT NULL,
   `anu_status` BOOLEAN NULL,
   PRIMARY KEY (`anu_id`),
-  INDEX `fk_cwl_anuncio_usuario_idx` (`anu_usu_id` ASC) VISIBLE,
-  INDEX `fk_cwl_anuncio_cwl_categoria1_idx` (`anu_cat_id` ASC) VISIBLE,
-  INDEX `fk_cwl_anuncio_cwl_endereco1_idx` (`anu_end_id` ASC) VISIBLE,
+  INDEX `fk_cwl_anuncio_usuario_idx` (`anu_usu_id` ASC) ,
+  INDEX `fk_cwl_anuncio_cwl_categoria1_idx` (`anu_cat_id` ASC) ,
+  INDEX `fk_cwl_anuncio_cwl_endereco1_idx` (`anu_end_id` ASC) ,
   CONSTRAINT `fk_cwl_anuncio_usuario`
     FOREIGN KEY (`anu_usu_id`)
     REFERENCES `mydb`.`cwl_usuario` (`usu_id`)
@@ -108,8 +108,8 @@ CREATE TABLE IF NOT EXISTS `mydb`.`cwl_ordem_servico` (
   `ord_anu_id` INT NOT NULL,
   `ord_data` TIMESTAMP(2) NULL,
   PRIMARY KEY (`ord_id`),
-  INDEX `fk_cwl_ordem_servico_cwl_usuario1_idx` (`ord_usu_id` ASC) VISIBLE,
-  INDEX `fk_cwl_ordem_servico_cwl_anuncio1_idx` (`ord_anu_id` ASC) VISIBLE,
+  INDEX `fk_cwl_ordem_servico_cwl_usuario1_idx` (`ord_usu_id` ASC) ,
+  INDEX `fk_cwl_ordem_servico_cwl_anuncio1_idx` (`ord_anu_id` ASC) ,
   CONSTRAINT `fk_cwl_ordem_servico_cwl_usuario1`
     FOREIGN KEY (`ord_usu_id`)
     REFERENCES `mydb`.`cwl_usuario` (`usu_id`)
