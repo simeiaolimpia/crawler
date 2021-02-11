@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Crawler</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
@@ -40,7 +40,7 @@
       </li>
     <?php endif ?>
       <li class="nav-item">
-        <a class="nav-link text-white font-weight-bold" href="#" tabindex="-1" aria-disabled="true">Entrar</a>
+        <a class="nav-link text-white font-weight-bold" href="../index.php" tabindex="-1" aria-disabled="true">Entrar</a>
       </li>
     </ul>
     <?php if (/*is_loged()*/ false): ?>
