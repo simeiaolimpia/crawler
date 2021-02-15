@@ -84,7 +84,7 @@
 						</form>
   					</div>
   					<div class="container text-center mt-4">
-						<a class="text-info font-weight-bold" href="#!">Cadastre-se</a>
+						<a class="text-info font-weight-bold" href="cadastro.php">Cadastre-se</a>
 					</div>			
   				</div>
 
