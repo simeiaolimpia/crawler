@@ -10,6 +10,8 @@
 	<main>
   <div class="container">
 
+		<a href="feed.php"> <i class="fas fa-chevron-left"></i> Voltar</a>
+
 			<div class="container-fliud">
 				<div class="wrapper row">
 					<div class="preview col-md-6">
