@@ -38,6 +38,8 @@
 	    <input class="btn btn-primary mx-0 mt-1" type="submit" value="Filtrar">
 	  </div>
 	</form>
+
+  <a href="anu_detail.php">detalhe do anuncio</a>
   </div>
 
   <div class="col-md-9">

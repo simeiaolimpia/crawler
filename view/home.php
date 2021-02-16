@@ -16,9 +16,9 @@
 				<?php
 
 				if ($sessao == 1) {
-					include 'temp/feed.php';
+					include 'feed.php';
 				} else {
-					include 'temp/login_form.php';
+					include 'login_form.php';
 				}
 
 				?>
