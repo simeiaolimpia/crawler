@@ -10,10 +10,10 @@ $result = $stmt->rowCount();
 
 if ($result > 0) {
 
-header('Location:/view/feed.php');
+header('Location:/view/home.php');
 exit();
 }else{
-	header('Location:/');
+	header('Location:/index.php');
 }
 
 
