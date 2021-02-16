@@ -1,0 +1,19 @@
+
+.h1{
+	font-family: ;
+	color: #107521 ;
+
+}
+.p {
+   position:relative;
+   overflow:auto;
+   width:100%;
+}
+
+.span {
+   display:block;
+   position:relative;
+   width:50%;
+   float:left;
+   text-align:right;  
+}
