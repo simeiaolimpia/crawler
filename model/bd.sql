@@ -69,7 +69,8 @@ DROP TABLE IF EXISTS `mydb`.`cwl_anuncio` ;
 CREATE TABLE IF NOT EXISTS `mydb`.`cwl_anuncio` (
   `anu_id` INT NOT NULL AUTO_INCREMENT,
   `anu_usu_id` INT NOT NULL,
-  `anu_titulo` VARCHAR(45) NULL,
+  `anu_imagem` VARCHAR(45) not NULL,
+  `anu_titulo` VARCHAR(45) not NULL,
   `anu_quantidade` INT NULL,
   `anu_data` TIMESTAMP(2) NULL,
   `anu_cat_id` INT NOT NULL,

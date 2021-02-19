@@ -1,4 +1,4 @@
-<?php $sessao = 1; ?>
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@
 
 				<?php
 
-				if ($sessao == 1) {
+				if ($_SESSION['logged']) {
 					include 'feed.php';
 				} else {
 					include 'login_form.php';

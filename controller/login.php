@@ -1,4 +1,4 @@
-<?php require_once 'bd.php';
+<?php session_start(); require_once 'bd.php';
 
 $email = $_POST['email'];
 $password = md5(stripslashes($_POST['password']));
@@ -9,7 +9,7 @@ $stmt->execute([$email,$password]);
 $result = $stmt->rowCount();
 
 if ($result > 0) {
-
+$_SESSION['logged'] = true;
 header('Location:/view/home.php');
 exit();
 }else{
