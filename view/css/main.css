@@ -1,7 +1,28 @@
 @import 'header.css';
+@import 'login_form.css';
 
+/*      estilos globais    */
 main {
   margin-top: 90px;
+}
+a {
+  color: #006400;
+}
+a:hover {
+  color: #004600;
+}
+.bg-green {
+  background-color: #9acd32;
+}
+.btn-dk-green {
+  background: #006400;
+  color: #fff;
+  border-radius: 5px;
+}
+.btn-dk-green:hover {
+  background: #004600;
+  color: #fff;
+  border-radius: 5px;
 }
 
 /*     detalhe de anuncio     */

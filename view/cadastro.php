@@ -56,7 +56,7 @@
 		<div class="mb-3 row">
 			<label for="" class="col-sm-2 col-form-label"></label>
 			<div class="col-sm-10">
-				<input name="" type="submit" class="form-control" value="Cadastrar">
+				<input name="" type="submit" class="form-control btn-dk-green" value="Cadastrar">
 			</div>
 		</div>
 

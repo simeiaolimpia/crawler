@@ -48,7 +48,7 @@
               <!--/.Card content-->
 
 						<div class="action">
-							<button class="btn btn-success btn-lg btn-block product-contact" type="button"> Entrar em contato</button>
+							<button class="btn btn-dk-green btn-lg btn-block product-contact" type="button"> Entrar em contato</button>
 						</div>
 					</div>
 				</div>
