@@ -4,14 +4,8 @@
 .navbar-brand img {
   width: 120px;
 }
-.user-action {
-  color: #495057;
-}
 .nav-link {
   font-weight: bold;
-  color: #006400;
-}
-.nav-link a:hover {
   color: #006400;
 }
 .navbar .nav-item i {

@@ -11,6 +11,10 @@ a {
 a:hover {
   color: #004600;
 }
+.title-dk-green {
+  font-weight: bolder;
+  color: #006400;
+}
 .bg-green {
   background-color: #9acd32;
 }
