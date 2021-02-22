@@ -16,39 +16,52 @@
   } );
 </script>
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #9ACD32">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <a class="navbar-brand" href="/">
-  	<img src="img/logoCrawler2.png" style="width:120px">
+  	<img src="img/logoCrawler2.png">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <div class="input-group shadow" style="width: 65%; margin:auto;">
+    <div class="input-group" style="width: 60%; margin:auto;">
     	<input class="form-control" type="search" placeholder="O que está procurando?" aria-label="Search" style="border-right: none;">
     	<div class="input-group-append">
     	<div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
     </div>
   	</div>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link text-white font-weight-bold" href="#">Sobre<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white font-weight-bold" href="/view/cadastro.php">Cadastrar</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white font-weight-bold" href="/view/home.php" tabindex="-1" aria-disabled="true">Entrar</a>
-      </li>
-    </ul>
-    <div class="dropdown">
-  		<a class="btn dropdown-toggle rounded" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: white;">
-    	Mais opções
-  		</a>
-  	<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    	<a class="dropdown-item" href="#">Perfil</a>	
-    	<a class="dropdown-item" href="#">Sair</a>
-  	</div>
-	</div>
+
+    <!-- links na home autenticado -->
+    <?php if (isset($_SESSION['logged'])): ?>
+
+      <a class="nav-link" href="/view/novo_anuncio.php"><i class="fas fa-plus"></i> Novo Anúncio</a>
+
+			<div class="nav-item dropdown">
+				<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">
+          <i class="fas fa-user"></i> 
+          <?= $_SESSION['logged'] ?>
+      </a>
+				<div class="dropdown-menu dropdown-menu-right">
+					<a href="#" class="dropdown-item">Perfil</a>
+					<div class="dropdown-divider"></div>
+					<a href="../controller/logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sair</a>
+				</div>
+			</div>
+
+    <!-- links na home sem autenticacao -->
+    <?php else: ?>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="/view/cadastro.php">Cadastrar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white font-weight-bold" href="/view/home.php">Entrar</a>
+        </li>
+      </ul>
+    <?php endif ?>
+
   </div>
 </nav>
