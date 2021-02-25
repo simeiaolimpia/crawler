@@ -34,12 +34,13 @@
     <!-- links na home autenticado -->
     <?php if (isset($_SESSION['logged'])): ?>
 
-      <a class="nav-link" href="/view/novo_anuncio.php"><i class="fas fa-plus"></i> Novo Anúncio</a>
+      <a id="add_anun" class="nav-link" href="/view/novo_anuncio.php"><i class="fas fa-plus"></i> Novo Anúncio</a>
+
 
 			<div class="nav-item dropdown">
 				<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">
           <i class="fas fa-user"></i> 
-          <?= $_SESSION['logged'] ?>
+          <?= $_SESSION['username'] ?>
       </a>
 				<div class="dropdown-menu dropdown-menu-right">
 					<a href="#" class="dropdown-item">Perfil</a>

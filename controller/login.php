@@ -10,6 +10,9 @@ $result = $stmt->rowCount();
 
 if ($result > 0) {
 $_SESSION['logged'] = true;
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$_SESSION['user_id'] = $result[0]['usu_id'];
+$_SESSION['username'] = ucwords($result[0]['usu_nome']);
 header('Location:/view/home.php');
 exit();
 }else{

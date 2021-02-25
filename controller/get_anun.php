@@ -3,7 +3,9 @@
 $stmt = $pdo->prepare('SELECT * FROM cwl_anuncio');
 $stmt->execute();
 
-$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$anun = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$result = array_reverse($anun);
 
 
 

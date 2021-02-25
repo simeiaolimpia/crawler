@@ -1,6 +1,5 @@
-<?php session_start(); ?>
-
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -15,7 +14,7 @@
 
 				<?php
 
-				if ($_SESSION['logged']) {
+				if (isset($_SESSION['logged'])) {
 					include 'feed.php';
 				} else {
 					include 'login_form.php';
@@ -23,6 +22,7 @@
 
 				?>
 
+				
 			</div>
 		</div>
 	</main>
