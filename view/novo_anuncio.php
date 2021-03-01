@@ -5,20 +5,40 @@
 			<img class="close" src="https://i.ibb.co/dQ7JgfS/exit-removebg-preview.png">
 		</button>
 		<h1 class="new_anun_h1"> Novo Anúncio </h1>
-		<h2 class="new_anun_h2"> Selecione ou faça upload de uma imagem </h2>
-		<input type="file" name="userfile" required>
-		<br>
-		<br>
-		<label><b>Título</b></label><br><input class="new_anun_input" type="text" name="title" id="title" required>
-		<br><br>
-		<label><b>Descrição</b></label><br><input class="new_anun_input" type="password" name="desc" id="desc" required>
-		<br><br>
-		<label><b>Categoria</b></label><br><input class="new_anun_input" type="text" name="cat" id="cat" required>
-		<br><br>
-		<label><b>Quantidade</b></label><br><input class="new_anun_input" type="text" name="quant" id="quant" required>
-		<br><br>	
 
-		<button class="button_anun button3"type="submit"><b><center>Publicar</center></b></button>
+		<div class="mb-3">
+			<label for="formFileMultiple" class="form-label">Selecione ou faça upload de uma imagem</label>
+			<input class="form-control" type="file" id="formFileMultiple" name="userfile" multiple>
+		</div>
+
+		<div class="mb-3">
+			<label for="title" class="col-sm-2 col-form-label">Título</label>
+				<input name="title" type="text"  class="form-control">
+		</div>
+
+		<div class="mb-3">
+			<label for="desc" class="form-label">Descrição</label>
+			<textarea class="form-control" id="desc" placeholder="Adicione uma descrição"></textarea>
+		</div>
+
+		<div class="input-group mb-3">
+			<label class="input-group-text" for="cat">Categoria</label>
+			<select class="form-select" name="cat" id="cat">
+				<option selected>Selecione...</option>
+				<option value="1">Eletrônicos</option>
+				<option value="2">Metal</option>
+				<option value="3">Papel</option>
+				<option value="4">Plástico</option>
+				<option value="5">Vidro</option>
+			</select>
+		</div>
+		
+		<div class="mb-3">
+			<label for="quant" class="col-sm-2 col-form-label">Quantidade</label>
+			<input name="quant" type="number"  class="form-control">
+		</div>
+
+		<button class="btn btn-dk-green "type="submit">Publicar</button>
 
 	</form>
 <script type="text/javascript"></script>
