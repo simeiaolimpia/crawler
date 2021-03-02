@@ -1,17 +1,17 @@
 <?php include_once 'temp/header.php' ?>
 
-<main style="width: 60%; margin: auto;margin-top: 20vh; position: relative; ">
-	<form method="post" action="/controller/new_user.php" >
+<main style="width: 60%; margin: auto;">
+	<form method="post" action="/controller/new_user.php" style="margin-top: 90px">
 		<div class="mb-3 row">
-			<label for="" class="col-sm-2 col-form-label d-flex justify-content-center align-items-center">
-				<img style="width: 100px;height: 100px" src="./img/icon_coletor.png">
+			<label for="" class="col-sm-2 col-form-label d-flex justify-content-left align-items-center">
+				<img style="width: 31px; height: 31px; margin-bottom: 10px;" src="./img/icon_coletor.png">
 				<h1>Coletor</h1>
 			</label>
 			<div class="col-sm-4">
 				<input name="flag" style="display: none" type="radio"  class="form-control" value="Coletor" name="tipo">
 			</div>
 			<label for="" class="col-sm-2 col-form-label d-flex justify-content-center align-items-center">
-				<img style="width: 100px;height: 100px" src="./img/ponto_de_coleta.png">
+				<img style="width: 31px; height: 31px; margin-bottom: 10px" src="./img/ponto_de_coleta.png">
 				<h1>Coleta</h1>
 			</label>
 			<div class="col-sm-4">
