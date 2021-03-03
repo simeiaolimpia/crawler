@@ -53,32 +53,31 @@ li img {
   position: absolute;
 }
 
-#new_anun{
+#new_anun {
   display: none;
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: white;
-
+  z-index: 1;
 }
 
-.new_anun_h1{
+.new_anun_h1 {
   color: #107521;
   font-size: 30pt;
 }
 
-.new_anun_h2{
+.new_anun_h2 {
   color: #000000;
-  font-size: 12pt;  
+  font-size: 12pt;
 }
-.new_anun{
+.new_anun {
   text-align: justify-center;
-  margin-top: 2em;
-  margin-left: 20em;
+  margin: 2em;
 }
-.new_anun_input{
+.new_anun_input {
   background-color: #eefca7;
-  width:500px;
+  width: 500px;
   border: 0;
   border-radius: 8%;
 }
@@ -86,24 +85,24 @@ li img {
   /*margin-left: */
   background-color: #ffffff;
   text-align: left;
-  border:0; 
+  border: 0;
   border-radius: 8%;
 }
-.button1{
+.button1 {
   background-color: #ffffff;
   margin-left: 45em;
 }
-.button2{
+.button2 {
   background-color: #ffffff;
   margin-left: 15em;
 }
-.button3{
+.button3 {
   background-color: #7ec91c;
   margin-left: 30em;
-  width:100px;
+  width: 100px;
 }
 
-.close{
+.close {
   position: absolute;
   max-width: 50px;
 }

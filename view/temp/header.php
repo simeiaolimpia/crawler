@@ -68,3 +68,21 @@
 
   </div>
 </nav>
+
+<div id="new_anun">
+  <?php include 'novo_anuncio.php'; ?>
+  <script type="text/javascript">
+    $('#add_anun').on('click', function(event) {
+      event.preventDefault();
+      /* Act on the event */
+      $('#new_anun').css('display', 'block');
+
+    });
+    $('.close').on('click', function(event) {
+      event.preventDefault();
+      /* Act on the event */
+      $('#new_anun').css('display', 'none');
+
+    });
+  </script>
+</div>

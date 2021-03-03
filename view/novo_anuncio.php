@@ -1,6 +1,6 @@
 
+	<div class="container">
 	<form class="new_anun" enctype="multipart/form-data" method="POST" action="/controller/new_anun.php">
-		<br><br>
 		<button class="button_anun button1" type="reset">
 			<img class="close" src="https://i.ibb.co/dQ7JgfS/exit-removebg-preview.png">
 		</button>
@@ -43,3 +43,4 @@
 	</form>
 <script type="text/javascript"></script>
 
+</div>
