@@ -15,8 +15,8 @@
 					<div class="row">
 						<div class="col-2"></div>
 							<div class="col-8">
-								<h1 class="font-weight-bold title-dk-green">Crawler</h1>
-								<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempora quia dicta totam quos soluta, numquam cum nemo! Velit aliquid nisi voluptatum. Expedita tempore beatae ex, maiores autem itaque magni.</h5>
+								<h1 class="font-weight-bold title-dk-green">Participe ativamente na coleta seletiva</h1>
+								<h5>O Crawler ajuda você a encontrar e compartilhar materiais recicláveis​ com as pessoas que trabalham para um mundo mais sustentável.</h5>
 							</div>
 						<div class="col-2"></div>
 					</div>
